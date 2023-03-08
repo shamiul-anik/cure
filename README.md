@@ -4,4 +4,4 @@
 雑巾がけから学ぶ身近なSDGｓ- 和紙布雑巾CUREプロジェクト
 
 ## Live Link
-https://cure.netlify.app
+https://cure-lp.netlify.app
