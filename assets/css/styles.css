@@ -87,11 +87,11 @@ img {
 /* Font Size */
 .fs-96 { font-size: 6rem; }
 .fs-64 { font-size: 4rem; }
-.fs-60 { font-size: 3.75rem; }
+.fs-60 { font-size: clamp(1.5rem, 0.5246rem + 4.1618vw, 3.75rem); /* fontfont-size: clamp(1.5rem, 0.9539rem + 2.3301vw, 3.75rem); -size: 3.75rem;*/ } 
 .fs-48 { font-size: 3rem; }
-.fs-32 { font-size: 2rem; }
+.fs-32 { font-size: clamp(1.25rem, 0.9249rem + 1.3873vw, 2rem); /* font-size: clamp(1.25rem, 1.068rem + 0.7767vw, 2rem); font-size: 2rem;  */ }
 .fs-24 { font-size: 1.5rem; }
-.fs-20 { font-size: 1.25rem; }
+.fs-20 { font-size: clamp(1rem, 0.8916rem + 0.4624vw, 1.25rem); /* font-size: 1.25rem; */ }
 .fs-16 { font-size: 1rem; }
 
 /* Font Weight */
@@ -141,7 +141,6 @@ img {
 /* Header Section */
 .header {
   background-image: url("../images/optimized/png/header-bg.png");
-  width: 100%;
   height: 62.5rem;
   background-size: cover;
   background-position: center;
@@ -152,7 +151,6 @@ img {
 /* "Section-1" Description */
 .section_description {
   background-image: url("../images/optimized/png/main-bg-full.png");
-  width: 100%;
   height: 40rem;
   background-size: cover;
   background-position: top;
