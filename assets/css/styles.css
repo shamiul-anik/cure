@@ -23,6 +23,7 @@
   --blue: #0070C0;
   --light-blue: #C7D4E3;
   --white: #FFFFFF;
+  --off-white: #ECECEC;
 }
 
 html {
@@ -263,7 +264,7 @@ img {
   height: min(90vw + 0.5rem, 430px); 
   width: min(90vw + 0.5rem, 430px); 
   border-radius: 50%; 
-  background-color: var(--white); 
+  background-color: var(--off-white); 
   aspect-ratio: 1;
 }
 
