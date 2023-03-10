@@ -18,6 +18,9 @@
 /* Google Font Import - Rampart One */
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 
+/* Google Font Import - Alegreya Sans SC */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@900&display=swap');
+
 :root {
   --black: #0A0A0A;
   --blue: #0070C0;
@@ -96,8 +99,10 @@ img {
 .font-zen-old-mincho { font-family: 'Zen Old Mincho', serif; }
 .font-train-one { font-family: 'Train One', cursive; }
 .font-rampart-one { font-family: 'Rampart One', cursive; }
+.font-alegreya-sans { font-family: 'Alegreya Sans SC', sans-serif; }
 
 /* Font Size */
+.fs-128 { font-size: clamp(4rem, 2.3425rem + 7.0718vw, 8rem); }
 .fs-96 { font-size: clamp(4rem, 3.1329rem + 3.6994vw, 6rem); /* font-size: 6rem; */ }
 .fs-64 { font-size: 4rem; }
 .fs-60 { font-size: clamp(1.5rem, 0.5246rem + 4.1618vw, 3.75rem); /* fontfont-size: clamp(1.5rem, 0.9539rem + 2.3301vw, 3.75rem); -size: 3.75rem;*/ } 
@@ -114,6 +119,7 @@ img {
 .fw-medium { font-weight: 500; }
 .fw-semibold { font-weight: 600; }
 .fw-bold { font-weight: 700; }
+.fw-bolder { font-weight: 900; }
 .fs-italic { font-style: italic; }
 
 /* Line Height */

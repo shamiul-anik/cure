@@ -1,3 +1,5 @@
+/************* Blockquote Text Animation Starts Here ************/
+
 (function ($) {
   $.fn.textAnimation = function (animation_speed, text_speed, animation) {
     var text,
@@ -34,6 +36,7 @@
 // var i = 1;
 
 $(".bounce_in_animation").textAnimation(250, 50, "bounceIn");
+$(".title_text").textAnimation(250, 300, "spinIn");
 
 // setInterval(function () {
 //   i %= 4;
@@ -53,3 +56,5 @@ $(".bounce_in_animation").textAnimation(250, 50, "bounceIn");
 //   }
 //   i++;
 // }, 1000 + 50 * temp.length + 250)
+
+/************* Blockquote Text Animation Ends Here ************/
