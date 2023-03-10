@@ -78,6 +78,7 @@ img {
 
 /* Height */
 .h-full { height: 100%; }
+.min-h-64 { min-height: 64px;}
 .min-h-75 { min-height: 75px !important;}
 .min-h-225 { min-height: 225px !important;}
 
@@ -100,8 +101,9 @@ img {
 .fs-64 { font-size: 4rem; }
 .fs-60 { font-size: clamp(1.5rem, 0.5246rem + 4.1618vw, 3.75rem); /* fontfont-size: clamp(1.5rem, 0.9539rem + 2.3301vw, 3.75rem); -size: 3.75rem;*/ } 
 .fs-48 { font-size: 3rem; }
+.fs-40 { font-size: clamp(1.5rem, 1.0856rem + 1.768vw, 2.5rem); }
 .fs-32 { font-size: clamp(1.25rem, 0.9249rem + 1.3873vw, 2rem); /* font-size: clamp(1.25rem, 1.068rem + 0.7767vw, 2rem); font-size: 2rem;  */ }
-.fs-24 { font-size: 1.5rem; }
+.fs-24 { font-size: clamp(1.125rem, 0.9696rem + 0.663vw, 1.5rem); }
 .fs-20 { font-size: clamp(1rem, 0.8916rem + 0.4624vw, 1.25rem); /* font-size: 1.25rem; */ }
 .fs-18 { font-size: clamp(0.875rem, 0.7666rem + 0.4624vw, 1.125rem); }
 .fs-16 { font-size: clamp(0.75rem, 0.6416rem + 0.4624vw, 1rem); }
@@ -124,6 +126,7 @@ img {
 /* Position  */
 .text-center { text-align: center; }
 .text-right { text-align: right; }
+.text-justify { text-align: justify; }
 .relative { position: relative; }
 .absolute { position: absolute; }
 .z-index-1 { z-index: 1; }
@@ -132,6 +135,7 @@ img {
 /* Display */
 .d-none { display: none; }
 .d-flex { display: flex; }
+.gap-16 { gap: 1rem; }
 .gap-20 { gap: 1.25rem; }
 .gap-32 { gap: 2rem; }
 .gap-40 { gap: 2.5rem; }
@@ -161,14 +165,28 @@ img {
   -webkit-box-shadow: 2px 2px 24px 1px rgba(0,0,0,0.5);
   -moz-box-shadow: 2px 2px 24px 1px rgba(0,0,0,0.5);
  }
+.box-shadow-md { 
+  box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.5);
+  -moz-box-shadow: 2px 2px 10px 2px rgba(0,0,0,0.5);
+ }
 .box-shadow-lg { 
   box-shadow: 4px 4px 30px 2px rgba(0,0,0,0.5);
   -webkit-box-shadow: 4px 4px 30px 2px rgba(0,0,0,0.5);
   -moz-box-shadow: 4px 4px 30px 2px rgba(0,0,0,0.5);
  }
 
-/* Margin */
+ /* Border Radius */
+ .rounded { border-radius: clamp(0.5rem, 0.2928rem + 0.884vw, 1rem);}
+
+
+ /*** Margin ***/
+
+/* Margin Left and Right */
 .m-inline-auto { margin-inline: auto; }
+
+/* Margin Top */
+.mt-96 { margin-top: 6rem;}
 .mt-72 { margin-top: 4.5rem;}
 .mt-64 { margin-top: 4rem;}
 .mt-48 { margin-top: 3rem;}
@@ -178,15 +196,36 @@ img {
 .mt-20 { margin-top: 1.25rem;}
 .mt-16 { margin-top: 1rem;}
 .mt-8 { margin-top: 0.5rem;}
+
+/* Margin Bottom */
 .mb-0 { margin-bottom: 0;}
+
+/* Margin Left */
+.ml-responsive-72 { margin-left: clamp(2rem, 1.1713rem + 3.5359vw, 4rem); }
 
 /* Padding */
 .p-96 { padding: clamp(3rem, 1.6994rem + 5.5491vw, 6rem) 1rem; }
 
 /* Mixed */
-/* .img-fluid {
-  max-width: 100%; 
-  height: auto;
+/* Scale Up */
+/* .img-scale-up {
+  transition: transform 0.3s ease-in;
+  image-rendering: crisp-edges;
+}
+
+.img-scale-up:hover {
+  transform: scale(1.05);
+  image-rendering: pixelated;
+} */
+
+/* Slide Left */
+/* .img-slide-left {
+  transform: translateX(-60px);
+  transition: all 0.3s ease-in;
+}
+
+.img-slide-left:hover {
+  transform: translateX(60px), scale(1.05);
 } */
 
 .arrow-img {
@@ -230,7 +269,7 @@ img {
 
 /* "Section-4" Blockquote */
 .blockquote {
-  /* margin: 0; */
+  margin: 0; /* Removing default margin of blockquote tag */
   padding: clamp(1rem, 0.5856rem + 1.768vw, 2rem); 
   background-color: var(--light-blue); 
   border: 1px solid #A4C1E1;
