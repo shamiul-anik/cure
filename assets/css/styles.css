@@ -111,6 +111,7 @@ img {
 .fw-medium { font-weight: 500; }
 .fw-semibold { font-weight: 600; }
 .fw-bold { font-weight: 700; }
+.fs-italic { font-style: italic; }
 
 /* Line Height */
 .line-height-32 { line-height: clamp(1.5rem, 1.2832rem + 0.9249vw, 2rem); /* line-height: 2rem; */ }
@@ -122,6 +123,7 @@ img {
 
 /* Position  */
 .text-center { text-align: center; }
+.text-right { text-align: right; }
 .relative { position: relative; }
 .absolute { position: absolute; }
 .z-index-1 { z-index: 1; }
@@ -182,10 +184,10 @@ img {
 .p-96 { padding: clamp(3rem, 1.6994rem + 5.5491vw, 6rem) 1rem; }
 
 /* Mixed */
-.img-fluid {
+/* .img-fluid {
   max-width: 100%; 
   height: auto;
-}
+} */
 
 .arrow-img {
   max-width: 60px;
@@ -224,6 +226,27 @@ img {
   border-radius: 50%; 
   background-color: var(--white); 
   aspect-ratio: 1;
+}
+
+/* "Section-4" Blockquote */
+.blockquote {
+  /* margin: 0; */
+  padding: clamp(1rem, 0.5856rem + 1.768vw, 2rem); 
+  background-color: var(--light-blue); 
+  border: 1px solid #A4C1E1;
+}
+
+.blockquote-left-border {
+  border-left-width: 0.75rem !important;
+  border-left-color: #A4C1E1 !important;
+}
+
+.blockquote_container {
+  padding-inline: 2rem;
+}
+
+.blockquote_credit::before {
+  content: "\2014\0020"; /* Long hyphen(-) and a space*/
 }
 
 
