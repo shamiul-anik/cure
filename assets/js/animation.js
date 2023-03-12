@@ -2,8 +2,7 @@
 
 (function ($) {
   $.fn.textAnimation = function (animation_speed, text_speed, animation) {
-    var text,
-      i = 0;
+    var text, i = 0;
     var $this = $(this);
     console.log("this ", $this); // #SI
 

@@ -102,6 +102,7 @@ img {
 .font-alegreya-sans { font-family: 'Alegreya Sans SC', sans-serif; }
 
 /* Font Size */
+.fs-160 { font-size: clamp(5rem, 2.9282rem + 8.8398vw, 10rem); }
 .fs-128 { font-size: clamp(4rem, 2.3425rem + 7.0718vw, 8rem); }
 .fs-96 { font-size: clamp(4rem, 3.1329rem + 3.6994vw, 6rem); /* font-size: 6rem; */ }
 .fs-64 { font-size: 4rem; }
