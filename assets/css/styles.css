@@ -291,6 +291,7 @@ img {
 
 /* Border Radius */
 .rounded { border-radius: clamp(0.5rem, 0.2928rem + 0.884vw, 1rem);}
+.rounded-sm { border-radius: 0.5rem; }
 
 
 /*** Margin ***/
