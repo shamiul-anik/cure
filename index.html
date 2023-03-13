@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="assets/css/styles.css">
   <!-- Animation CSS -->
   <link rel="stylesheet" href="assets/css/animation.css">
+  <!-- Custom Checkbox -->
+  <link rel="stylesheet" href="assets/css/custom_checkbox.css">
 </head>
 
 <body>
@@ -303,12 +305,77 @@
 
           </div>
 
+          <!-- Contact -->
+          <div class="mt-48">
+            <header>
+              <h4 class="fs-24 fw-bold text-shadow-sm text-center">ご応募やお問合せはこちらからお願いします</h4>
+            </header>
+            <form class="mt-32" action="">
+              <input class="form-control" type="text" placeholder="小学校名（必須）">
+              <input class="form-control mt-8" type="text" placeholder="住所（必須）">
+              <div class="input-group">
+                <input class="form-control mt-8" type="text" placeholder="お名前（必須）">
+                <input class="form-control mt-8" type="text" placeholder="役職">
+              </div>
+              <div class="input-group">
+                <input class="form-control mt-8" type="text" placeholder="電話番号（必須）">
+                <input class="form-control mt-8" type="text" placeholder="メールアドレス（必須）">
+              </div>
+              <label class="checkbox_container mt-16">CUREプロジェクトへ応募を希望
+                <input type="checkbox" id="apply-cure-project" name="apply-cure-project">
+                <span class="checkmark"></span>
+              </label>
+              <textarea class="form-control mt-16" cols="30" rows="10" placeholder="お問合せ内容"></textarea>
+              <button class="btn btn-primary w-25 w-sm-full w-md-50 fs-20 fw-semibold mt-16" id="send-btn" type="submit">送信</button>
+            </form>
+          </div>
         </div>
+
+
 
 
       </div>
     </section>
     <!-- Section-4 Ends Here -->
+
+    <!-- Section-5 Starts Here -->
+    <section class="bg-light-blue mt-32 p-96">
+      <div class="max-w-1280 m-inline-auto">
+        <header>
+          <h2 class="fs-32 fw-bold mt-8 text-shadow-sm text-center">企業の皆様へ</h2>
+          <h3 class="fs-40 fw-bold mt-16 text-shadow-sm text-center">CUREプロジェクトへの協賛ご協力をお願いします</h3>
+        </header>
+        
+        <p class="fs-20 line-height-32 text-center mt-32">
+          雑巾がけという世界に類を見ない日本の伝統的な小学校の掃除教育の機会にSDGｓという新たな意義を与える <br>
+          本プロジェクトに是非協賛をお願いいたします。（生徒一人につき1,000円程度。小学校単位でお願いしております。） <br>
+          協賛企業様へは対象小学校の生徒さん達に自社の環境への取り組み活動などをご紹介する特別授業の機会のご提供や、 <br>
+          小冊子の配布などのPRの機会も設けていただくよう学校側にはご依頼させていただきます。<br>
+          この企業と小学校のSDGｓ教育コラボレーションという類稀な機会を是非ご活用いただければ幸いです。
+        </p>
+
+        <div class="footer_bg mt-48 d-flex justify-content-center align-items-center">
+          <!-- <img class="rounded" src="assets/images/optimized/png/footer-bg.png" alt="Footer Background Image"> -->
+          <!-- <img src="assets/images/optimized/png/footer-img1.png" alt="Footer Image 1">
+          <img src="assets/images/optimized/png/footer-img2.png" alt="Footer Image 2">
+          <img src="assets/images/optimized/png/footer-img3.png" alt="Footer Image 3"> -->
+          <div>
+            <img src="assets/images/optimized/png/footer-boy-group.png" alt="Footer Boy Group">
+          </div>
+        </div>
+
+        <header>
+          <h4 class="fs-32 fw-bold mt-72 text-shadow-sm text-center">協賛応募小学校はこちらからご確認ください！</h4>
+        </header>
+
+        <div class="mt-32 text-center">
+          <a href="#">
+            <img src="assets/images/optimized/png/btn-with-text.png" alt="CUREプロジェクト協賛サイト Button">
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Section-5 Ends Here -->
 
 
 
@@ -317,7 +384,9 @@
   <!-- Main Ends Here -->
 
   <!-- Footer Starts Here -->
-  <footer></footer>
+  <footer class="bg-light-blue p-48">
+    <p class="text-center fs-20">© 2023 Curegroup Corporation. All rights reserved.</p>
+  </footer>
   <!-- Footer Ends Here -->
 
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
