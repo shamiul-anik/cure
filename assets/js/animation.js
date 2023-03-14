@@ -1,5 +1,6 @@
 /************* Blockquote Text Animation Starts Here ************/
-
+// https://codepen.io/worksbyvan/pen/QqNGbZ
+// https://codepen.io/dghez/pen/abRVQL
 (function ($) {
   $.fn.textAnimation = function (animation_speed, text_speed, animation) {
     var text, i = 0;
