@@ -211,7 +211,7 @@ img {
 .fs-128 { font-size: clamp(4rem, 2.3425rem + 7.0718vw, 8rem); }
 .fs-96 { font-size: clamp(4rem, 3.1329rem + 3.6994vw, 6rem); /* font-size: 6rem; */ }
 .fs-64 { font-size: 4rem; }
-.fs-60-header { font-size: clamp(1.25rem, 0.6432rem + 2.589vw, 3.75rem); } 
+.fs-60-header { font-size: clamp(1.5rem, 0.9539rem + 2.3301vw, 3.75rem); /*font-size: clamp(1.25rem, 0.6432rem + 2.589vw, 3.75rem); */ } 
 .fs-60 { font-size: clamp(1.5rem, 0.5246rem + 4.1618vw, 3.75rem); /* fontfont-size: clamp(1.5rem, 0.9539rem + 2.3301vw, 3.75rem); -size: 3.75rem;*/ } 
 .fs-48 { font-size: 3rem; }
 .fs-40 { font-size: clamp(1.5rem, 1.0856rem + 1.768vw, 2.5rem); }
