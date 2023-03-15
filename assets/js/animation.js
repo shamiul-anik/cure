@@ -5,14 +5,14 @@
   $.fn.textAnimation = function (animation_speed, text_speed, animation) {
     var text, i = 0;
     var $this = $(this);
-    console.log("this ", $this); // #SI
+    // console.log("this ", $this); // #SI
 
     // store text and clear
     text = $this.text();
-    console.log("text: ", text); // #SI
+    // console.log("text: ", text); // #SI
     // $this.css('white-space', 'pre');
     $this.html("");
-    console.log("this ", $this.html("")); // #SI
+    // console.log("this ", $this.html("")); // #SI
 
     var addLetter = setInterval(function () {
       $this.append(
