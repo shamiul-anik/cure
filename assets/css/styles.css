@@ -211,9 +211,11 @@ img {
 .fs-128 { font-size: clamp(4rem, 2.3425rem + 7.0718vw, 8rem); }
 .fs-96 { font-size: clamp(4rem, 3.1329rem + 3.6994vw, 6rem); /* font-size: 6rem; */ }
 .fs-64 { font-size: 4rem; }
+.fs-60-header { font-size: clamp(1.25rem, 0.6432rem + 2.589vw, 3.75rem); } 
 .fs-60 { font-size: clamp(1.5rem, 0.5246rem + 4.1618vw, 3.75rem); /* fontfont-size: clamp(1.5rem, 0.9539rem + 2.3301vw, 3.75rem); -size: 3.75rem;*/ } 
 .fs-48 { font-size: 3rem; }
 .fs-40 { font-size: clamp(1.5rem, 1.0856rem + 1.768vw, 2.5rem); }
+.fs-32-header { font-size: clamp(1rem, 0.7573rem + 1.0356vw, 2rem); }
 .fs-32 { font-size: clamp(1.25rem, 0.9249rem + 1.3873vw, 2rem); /* font-size: clamp(1.25rem, 1.068rem + 0.7767vw, 2rem); font-size: 2rem;  */ }
 .fs-24 { font-size: clamp(1.125rem, 0.9696rem + 0.663vw, 1.5rem); }
 .fs-20 { font-size: clamp(1rem, 0.8916rem + 0.4624vw, 1.25rem); /* font-size: 1.25rem; */ }
@@ -352,13 +354,16 @@ img {
 
 /* Header Section */
 .header {
-  background-image: url("../images/optimized/png/header-bg-with-images.png");
+  background-image: url("../images/optimized/png/header-bg-with-images-and-text.png");
+  /* background-image: url("../images/optimized/png/header-bg-with-images.png"); */
   /* background-image: url("../images/optimized/png/header-bg.png"); */
-  height: 62.5rem;
+  /* height: 62.5rem; */
+  aspect-ratio: 16 / 8.45;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 3rem 1rem;
+  padding: clamp(0.125rem, -0.5728rem + 2.9773vw, 3rem) 1rem;
+  /* padding: 3rem 1rem; */
 }
 
 /* "Section-1" Description */
@@ -425,7 +430,11 @@ img {
     width: 100%; 
   }
 }
+
 @media screen and (max-width: 767px) {
+  /* .header {
+    aspect-ratio: 16 / 12;
+  } */
   .w-sm-full { 
     width: 100%; 
   }
@@ -439,12 +448,19 @@ img {
   }
 }
 
+@media screen and (max-width: 1023px) {
+  .header {
+    aspect-ratio: 16 / 12;
+  }
+}
+
 @media screen and (max-width: 1279px) {
   /* Section-5 */
   .footer_bg {
     background-image: url("../images/optimized/png/footer-bg-md.png");
   }
 }
+
 @media screen and (min-width: 576px) {
   .flex-sm-column { 
     flex-direction: column; 
