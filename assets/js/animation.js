@@ -36,7 +36,7 @@
 // var i = 1;
 
 $(".bounce_in_animation").textAnimation(250, 50, "bounceIn");
-$(".title_text").textAnimation(250, 300, "spinIn");
+// $(".title_text").textAnimation(250, 300, "spinIn");
 
 // setInterval(function () {
 //   i %= 4;
