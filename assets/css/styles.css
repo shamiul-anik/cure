@@ -143,26 +143,26 @@ textarea.form-control {
 /* Primary Button */
 .btn-primary {
   color: #fff;
-  background-color: #0d6efd;
+  background-color: #5B9BD5;
 }
 
 /* Hover */
 .btn-primary:hover {
-  background-color: #0b5ed7;
+  background-color: #4e91d0;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
 /* Focus */
 .btn-primary:active {
-  background-color: #0a58ca;
-  border-color: #0a53be;
+  background-color: #4489ca;
+  border-color: #4489ca;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
 /* Disabled */
-.btn-primary:active {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+.btn-primary:disabled {
+  background-color: #4176a7;
+  border-color: #4176a7;
 }
 
 /* ol,
